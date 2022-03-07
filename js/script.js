@@ -19,7 +19,7 @@ function genPassword() {
 
     var wantsLowercase = prompt("Do you want lowercase letters?")
     var wantsLowercase = confirm("Do you want lowercase letters?")
-    
+
     var wantsspecialChars = prompt("Do you want special characters?")
     var wantsspecialChars = confirm("Do you want special characters?")
 
@@ -27,6 +27,7 @@ function genPassword() {
     if (wantsCapital){allUserChars = allUserChars.concat(uppercaseChars)}
     if (wantsLowercase){allUserChars = allUserChars.concat(lowercaseChars)}
     if (wantsSpecial){allUserChars = allUserChars.concat(specialChars)}
+    
     console.log(allUserChars)
     var passwordLength = 12;
     var password = "";
