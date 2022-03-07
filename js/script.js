@@ -1,20 +1,5 @@
 // Assignment code here
-var password=document.getElementById("password");
-var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
- var passwordLength = 12;
- var password = "";
 
- for (var i = 0; i <= passwordLength; i++) {
-  var randomNumber = Math.floor(Math.random() * chars.length);
-  password += chars.substring(randomNumber, randomNumber +1);
- }
- document.getElementById("password").value = password;
-
- function copyPassword() {
-  var copyText = document.getElementById("password");
-  copyText.select();
-  
-}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -26,7 +11,6 @@ function generatePassword() {
 //    b. Lowercase, uppercase, numbers, special characters
 // 2. Validate the input.
 // 3. Display password to the page.
-
 
 
   return "Generated password will go here";
@@ -42,6 +26,6 @@ function writePassword() {
 
 }
 
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
