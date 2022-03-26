@@ -3,6 +3,8 @@
 ## Purpose
 A website to help generate passwords
 
+[screenshot](assets\images\password generator.png)
+
 ## Built With
 HTML
 CSS
